@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
 //This will be used to run the Script , required to deploy the website
 app.post('/DeployTerraform', function (req, res) {
     var commandToRun = "terraform apply -auto-approve ";
-    console.log("finalCommand->"+ finalCommand);
+    console.log("finalCommand->"+ commandToRun);
     cmd.run(commandToRun);
     res.sendStatus(200);
 });
