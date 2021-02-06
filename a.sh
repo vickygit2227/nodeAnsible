@@ -16,4 +16,4 @@ echo 'Stopping the container'
 sudo docker stop $(sudo docker ps -a -q)
 sudo docker rm $(sudo docker ps -a -q)
 
-sudo docker run -p 8080:8080 -d image1
+sudo docker run -p 9090:9090 -d image1
